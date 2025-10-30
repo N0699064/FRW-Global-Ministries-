@@ -17,6 +17,17 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleMouseEnter = (itemName) => {
+    setOpenDropdown(itemName);
+  };
+
+  const handleMouseLeave = () => {
+    // Small delay to allow mouse to move into dropdown
+    setTimeout(() => {
+      setOpenDropdown(null);
+    }, 200);
+  };
+
   const toggleDropdown = (itemName) => {
     setOpenDropdown(openDropdown === itemName ? null : itemName);
   };
@@ -43,13 +54,14 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navigationItems.map((item) => (
-              <div key={item.name} className="relative">
+              <div 
+                key={item.name} 
+                className="relative"
+                onMouseEnter={() => item.dropdown && handleMouseEnter(item.name)}
+                onMouseLeave={handleMouseLeave}
+              >
                 {item.dropdown ? (
-                  <div
-                    className="relative"
-                    onMouseEnter={() => setOpenDropdown(item.name)}
-                    onMouseLeave={() => setOpenDropdown(null)}
-                  >
+                  <>
                     <button
                       className={`text-sm font-semibold tracking-wider transition-colors flex items-center ${
                         location.pathname.startsWith(item.path)
@@ -61,19 +73,23 @@ const Navbar = () => {
                       <ChevronDown size={16} className="ml-1" />
                     </button>
                     {openDropdown === item.name && (
-                      <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md py-2 border border-gray-100">
+                      <div 
+                        className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-md py-2 border border-gray-100"
+                        onMouseEnter={() => setOpenDropdown(item.name)}
+                        onMouseLeave={handleMouseLeave}
+                      >
                         {item.dropdown.map((subItem) => (
                           <Link
                             key={subItem.name}
                             to={subItem.path}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-black transition-colors"
+                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black transition-colors"
                           >
                             {subItem.name}
                           </Link>
                         ))}
                       </div>
                     )}
-                  </div>
+                  </>
                 ) : (
                   <Link
                     to={item.path}
