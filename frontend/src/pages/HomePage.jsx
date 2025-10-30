@@ -4,7 +4,9 @@ import HeroSection from '../components/HeroSection';
 import StatsSection from '../components/StatsSection';
 import MissionSection from '../components/MissionSection';
 import ImpactSection from '../components/ImpactSection';
+import GlobalReach from '../components/GlobalReach';
 import MinistryHighlights from '../components/MinistryHighlights';
+import FeaturedMinistries from '../components/FeaturedMinistries';
 import TestimonialSection from '../components/TestimonialSection';
 import LatestUpdates from '../components/LatestUpdates';
 import ActionCards from '../components/ActionCards';
@@ -19,7 +21,9 @@ const HomePage = () => {
       <StatsSection />
       <MissionSection />
       <ImpactSection />
+      <GlobalReach />
       <MinistryHighlights />
+      <FeaturedMinistries />
       <TestimonialSection />
       <LatestUpdates />
       <ActionCards />
