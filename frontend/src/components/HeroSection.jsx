@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { heroContent } from '../data/mock';
 import { Play, X } from 'lucide-react';
 
 const HeroSection = () => {
   const [showFullVideo, setShowFullVideo] = useState(false);
+  const [videoKey, setVideoKey] = useState(0);
   
   // Extract Vimeo video ID from URL
   const getVimeoId = (url) => {
@@ -13,23 +14,34 @@ const HeroSection = () => {
 
   const vimeoId = getVimeoId(heroContent.videoUrl);
 
+  // Force video reload on mount
+  useEffect(() => {
+    setVideoKey(prev => prev + 1);
+  }, []);
+
   return (
     <>
-      <div className="relative h-screen w-full overflow-hidden">
+      <div className="relative h-screen w-full overflow-hidden bg-black">
         {/* Video Background */}
         <div className="absolute inset-0">
           {vimeoId ? (
             <iframe
-              src={`https://player.vimeo.com/video/${vimeoId}?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1`}
-              className="absolute top-1/2 left-1/2 w-[100vw] h-[100vh] transform -translate-x-1/2 -translate-y-1/2"
+              key={videoKey}
+              src={`https://player.vimeo.com/video/${vimeoId}?background=1&autoplay=1&loop=1&autopause=0&muted=1&quality=auto`}
+              className="absolute w-full h-full"
               style={{
-                minWidth: '100%',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                width: '177.77777778vh',
+                height: '56.25vw',
                 minHeight: '100%',
-                width: 'auto',
-                height: 'auto',
+                minWidth: '100%',
+                transform: 'translate(-50%, -50%)',
               }}
               frameBorder="0"
               allow="autoplay; fullscreen"
+              allowFullScreen
             ></iframe>
           ) : (
             <div
@@ -45,17 +57,17 @@ const HeroSection = () => {
         {/* Content */}
         <div className="relative h-full flex items-center justify-center px-6">
           <div className="text-center max-w-6xl">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white/80 mb-8 tracking-tight leading-tight animate-fade-in drop-shadow-2xl">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white/75 mb-8 tracking-tight leading-tight animate-fade-in drop-shadow-2xl">
               {heroContent.title}
             </h1>
-            <p className="text-xl md:text-2xl text-white/75 max-w-3xl mx-auto font-light animate-fade-in-delay drop-shadow-lg mb-8">
+            <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto font-light animate-fade-in-delay drop-shadow-lg mb-8">
               {heroContent.subtitle}
             </p>
             
             {/* Play Full Video Button */}
             <button
               onClick={() => setShowFullVideo(true)}
-              className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 border-2 border-white/40 group animate-fade-in-delay"
+              className="inline-flex items-center gap-3 bg-white/15 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold hover:bg-white/25 transition-all duration-300 border-2 border-white/30 group animate-fade-in-delay"
             >
               <Play size={24} className="group-hover:scale-110 transition-transform" />
               Watch Full Video
@@ -65,8 +77,8 @@ const HeroSection = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/60 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-2 bg-white/60 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-2 bg-white/50 rounded-full"></div>
           </div>
         </div>
       </div>
