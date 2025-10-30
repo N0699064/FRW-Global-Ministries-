@@ -1,12 +1,13 @@
 // Mock data for FRW Global Ministries website
 
 export const navigationItems = [
+  { name: 'HOME', path: '/' },
   { name: 'ABOUT US', path: '/about' },
   { 
     name: 'SCHOOLS', 
     path: '/schools',
     dropdown: [
-      { name: 'Jesus Cares M. School', path: '/schools/jesus-cares' },
+      { name: 'Jesus Cares Montessori School', path: '/schools/jesus-cares' },
     ]
   },
   { name: 'BLOG', path: '/blog' },
@@ -23,10 +24,10 @@ export const statsData = {
   number: '30+',
   description: 'YEARS OF MINISTRY IMPACT SINCE 1993',
   images: [
-    'https://www.frwglobalministries.org/cdn/shop/files/frwkids1.jpg',
-    'https://www.frwglobalministries.org/cdn/shop/files/frwkids3.jpg',
-    'https://www.frwglobalministries.org/cdn/shop/files/frwfood.jpg',
-    'https://www.frwglobalministries.org/cdn/shop/files/frwAbout1.jpg',
+    'https://images.unsplash.com/photo-1761208663994-5d8aac0f9276',
+    'https://images.unsplash.com/photo-1717201611909-0f75ee9b0b1e',
+    'https://images.unsplash.com/photo-1694286068611-d0c24cbc2cd5',
+    'https://images.unsplash.com/photo-1584365060375-146b264bbdb5',
   ],
 };
 
@@ -49,37 +50,41 @@ export const aboutContent = {
 
 export const schoolsContent = {
   mainSchool: {
-    name: 'Jesus Cares M. School',
-    tagline: 'Educating Hearts, Transforming Lives',
-    description: 'A Christ-centered educational institution providing quality education and spiritual formation for children and youth in Ghana.',
-    mission: 'To educate and empower the next generation with academic excellence and biblical values, preparing them to be leaders who impact their communities for Christ.',
+    name: 'Jesus Cares Montessori School',
+    tagline: 'Nurturing Minds, Transforming Lives',
+    description: 'An educational haven founded by Apostle Florence White and supported by Jesus Cares Ministry, embodying the transformative power of love, education, and community impact in Ghana.',
+    mission: 'Dedicated to providing not just academic excellence but also a nurturing environment that caters to the unique needs of each child, fostering intellectual, emotional, and spiritual growth.',
+    guidance: 'Guided by Christian values, the school instills a sense of moral purpose and compassion, shaping future leaders with a strong moral compass.',
+    commitment: 'With a commitment to community upliftment, the school extends its positive influence beyond the classroom, offering support and educational outreach to families.',
     founded: '2008',
     location: 'Ghana, West Africa',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids5-1.jpg',
+    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids9.jpg',
   },
-  programs: [
+  verses: [
     {
-      name: 'Primary Education',
-      description: 'Comprehensive elementary education with strong foundation in literacy, mathematics, and biblical studies.',
-      grades: 'Grades 1-6',
+      verse: 'GALATIANS 6:2',
+      text: '"Bear one another\'s burdens, and so fulfill the law of Christ."',
+      image: 'https://www.frwglobalministries.org/cdn/shop/files/jcmsdp.png',
     },
     {
-      name: 'Character Formation',
-      description: 'Daily biblical teachings and character development programs that instill Christian values.',
-      focus: 'Spiritual Growth',
+      verse: 'PHILIPPIANS 2:4',
+      text: '"Let each of you look not only to his own interests, but also to the interests of others."',
+      image: 'https://www.frwglobalministries.org/cdn/shop/files/IMG_2452.jpg',
     },
     {
-      name: 'Community Service',
-      description: 'Students engage in outreach programs, learning to serve their communities with compassion.',
-      impact: 'Local Outreach',
+      verse: 'HEBREWS 13:16',
+      text: '"And do not forget to do good and to share with others, for with such sacrifices God is pleased."',
+      image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids7.jpg',
     },
   ],
-  impact: {
-    studentsServed: '500+',
-    yearsOperating: '15+',
-    graduationRate: '95%',
-    scholarshipsProvided: '100+',
-  },
+  galleryImages: [
+    'https://www.frwglobalministries.org/cdn/shop/files/frwkids9.jpg',
+    'https://www.frwglobalministries.org/cdn/shop/files/frwkids10.jpg',
+    'https://www.frwglobalministries.org/cdn/shop/files/IMG_2453.jpg',
+    'https://images.unsplash.com/photo-1761208663994-5d8aac0f9276',
+    'https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg',
+    'https://images.pexels.com/photos/5428265/pexels-photo-5428265.jpeg',
+  ],
 };
 
 export const actionCards = [
@@ -87,21 +92,21 @@ export const actionCards = [
     id: 1,
     title: 'Join the Movement',
     description: 'Get updates from our ministry and see how God is moving.',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids5-1.jpg',
+    image: 'https://images.unsplash.com/photo-1717201611909-0f75ee9b0b1e',
     link: '#newsletter',
   },
   {
     id: 2,
     title: 'Support the Ministry',
     description: 'Join a like-minded community of givers making a difference.',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwfood.jpg',
+    image: 'https://images.unsplash.com/photo-1694286068611-d0c24cbc2cd5',
     link: 'https://www.paypal.com/donate/?business=7PUG78MDTCB8A&no_recurring=0&item_name=Thank+you+for+your+donation%2C+may+God+bless.&currency_code=USD',
   },
   {
     id: 3,
     title: 'Pray for the Mission',
     description: 'Join a community of prayer warriors supporting global ministry.',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwAbout1.jpg',
+    image: 'https://images.unsplash.com/photo-1626197626028-46c0cf75813f',
     link: '#prayer',
   },
 ];
@@ -113,12 +118,12 @@ export const blogPosts = [
     excerpt: 'See the incredible ways God is working through our ministry to bring hope and salvation to communities around the world.',
     date: 'March 15, 2024',
     author: 'Florence R. White',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids1.jpg',
+    image: 'https://images.unsplash.com/photo-1584365060375-146b264bbdb5',
     category: 'Ministry Update',
     content: `
       <p>In the heart of Ghana, transformation is happening daily. What began as a simple act of feeding hungry souls in a restaurant has blossomed into a global movement touching thousands of lives.</p>
       
-      <p>Over the past 30 years, we've witnessed God's faithfulness in remarkable ways. From establishing churches in remote villages to educating hundreds of children through Jesus Cares M. School, every step has been ordered by the Lord.</p>
+      <p>Over the past 30 years, we've witnessed God's faithfulness in remarkable ways. From establishing churches in remote villages to educating hundreds of children through Jesus Cares Montessori School, every step has been ordered by the Lord.</p>
       
       <h3>Recent Testimonies</h3>
       <p>This month alone, we've seen 50 souls come to Christ through our evangelistic outreach programs. Families are being restored, communities are being transformed, and the light of the Gospel continues to spread across West Africa and beyond.</p>
@@ -135,7 +140,7 @@ export const blogPosts = [
     excerpt: 'Our food ministry continues to provide physical and spiritual nourishment to those in need, demonstrating Christ\'s love in action.',
     date: 'March 10, 2024',
     author: 'Ministry Team',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwfood.jpg',
+    image: 'https://images.unsplash.com/photo-1694286068611-d0c24cbc2cd5',
     category: 'Outreach',
     content: `
       <p>Food insecurity remains a critical challenge in many communities we serve. But through our feeding programs, we're not just providing meals – we're sharing the love of Christ in the most practical way.</p>
@@ -157,10 +162,10 @@ export const blogPosts = [
     excerpt: 'Investing in the next generation through biblical teaching, mentorship, and showing them the transformative power of God\'s love.',
     date: 'March 5, 2024',
     author: 'Children\'s Ministry',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids3.jpg',
+    image: 'https://images.unsplash.com/photo-1761208663994-5d8aac0f9276',
     category: 'Children',
     content: `
-      <p>Children are not just the church of tomorrow – they are the church of today. At Jesus Cares M. School and through our various children's programs, we're investing in young lives who will shape the future of their communities.</p>
+      <p>Children are not just the church of tomorrow – they are the church of today. At Jesus Cares Montessori School and through our various children's programs, we're investing in young lives who will shape the future of their communities.</p>
       
       <h3>Education with Purpose</h3>
       <p>Our school provides more than academic education. Every day begins with prayer and Bible study. Students learn that they are fearfully and wonderfully made, created for a purpose by a loving God.</p>
@@ -170,7 +175,7 @@ export const blogPosts = [
       <h3>Character Development</h3>
       <p>Beyond academics, we focus heavily on character formation. Students learn values like integrity, compassion, leadership, and service. Through community service projects, they put these values into action.</p>
       
-      <p>One graduate recently shared: "Jesus Cares M. School didn't just prepare me for university – it prepared me for life. The biblical foundation I received shapes every decision I make today."</p>
+      <p>One graduate recently shared: "Jesus Cares Montessori School didn't just prepare me for university – it prepared me for life. The biblical foundation I received shapes every decision I make today."</p>
       
       <h3>Scholarships and Support</h3>
       <p>We provide scholarships to students from families who cannot afford tuition. No child is turned away due to financial constraints. Education is a pathway out of poverty, and we're committed to making it accessible to all.</p>
@@ -182,7 +187,7 @@ export const blogPosts = [
     excerpt: 'Through partnerships and dedication, we continue to spread the Gospel across borders, bringing salvation to all people.',
     date: 'February 28, 2024',
     author: 'Florence R. White',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwAbout1.jpg',
+    image: 'https://images.unsplash.com/photo-1717201611909-0f75ee9b0b1e',
     category: 'Global Ministry',
     content: `
       <p>The Great Commission knows no boundaries. From our roots in Ghana to our expansion across West Africa and beyond, we're committed to taking the Gospel to every nation, tribe, and tongue.</p>
@@ -207,7 +212,7 @@ export const blogPosts = [
     excerpt: 'Discover how our ministry remains rooted in unity, reflecting Christ\'s love through collaborative efforts and shared vision.',
     date: 'February 20, 2024',
     author: 'Ministry Team',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids5-1.jpg',
+    image: 'https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg',
     category: 'Testimony',
     content: `
       <p>"How good and pleasant it is when God's people live together in unity!" (Psalm 133:1). This scripture guides everything we do at Florence R. White Global Ministries.</p>
@@ -232,7 +237,7 @@ export const blogPosts = [
     excerpt: 'Exploring how God\'s grace transforms lives and opens doors for salvation, one heart at a time.',
     date: 'February 15, 2024',
     author: 'Florence R. White',
-    image: 'https://www.frwglobalministries.org/cdn/shop/files/crossssbg.jpg',
+    image: 'https://images.unsplash.com/photo-1626197626028-46c0cf75813f',
     category: 'Teaching',
     content: `
       <p>"For the grace of God has appeared that offers salvation to all people" (Titus 2:11). This verse forms the foundation of everything we do. Grace – unmerited favor – is at the heart of the Gospel message.</p>
