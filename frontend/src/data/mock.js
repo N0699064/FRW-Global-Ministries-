@@ -2,7 +2,6 @@
 
 export const navigationItems = [
   { name: 'ABOUT US', path: '/about' },
-  { name: 'MINISTRIES', path: '/ministries' },
   { 
     name: 'SCHOOLS', 
     path: '/schools',
@@ -10,7 +9,6 @@ export const navigationItems = [
       { name: 'Jesus Cares M. School', path: '/schools/jesus-cares' },
     ]
   },
-  { name: 'STORIES', path: '/stories' },
   { name: 'BLOG', path: '/blog' },
 ];
 
@@ -40,44 +38,42 @@ export const missionContent = {
 
 export const aboutContent = {
   title: 'About Florence R. White Global Ministries',
-  mission: 'Florence R. White Global Ministries is dedicated to spreading the Gospel of Jesus Christ and serving communities worldwide through evangelism, education, and compassionate outreach.',
-  vision: 'Our vision is to see transformed lives and thriving communities that reflect the love of Christ, with a special focus on empowering the next generation through spiritual and educational development.',
-  values: [
-    {
-      title: 'Faith in Action',
-      description: 'We believe faith without works is dead. Our ministry demonstrates God\'s love through tangible service and support.',
-    },
-    {
-      title: 'Global Impact',
-      description: 'From local communities to international missions, we are committed to making a difference wherever God calls us.',
-    },
-    {
-      title: 'Empowering Education',
-      description: 'We invest in education as a pathway to breaking cycles of poverty and building sustainable futures.',
-    },
-    {
-      title: 'Unity in Christ',
-      description: 'We work together as one body in Christ, united in purpose and love for all people.',
-    },
-  ],
-  leadershipBio: 'Florence R. White is a passionate evangelist and educator who has dedicated her life to serving God and making a difference in the lives of others. With over 30 years of ministry experience, she continues to lead with vision, compassion, and unwavering faith.',
+  founderName: 'Florence R. White',
+  founderImage: 'https://www.frwglobalministries.org/cdn/shop/files/frw.png',
+  founderBio: 'Florence is a mother, an international evangelist, church-planter, and Bible school director. Her goal is to evangelize the unsaved and to disciple them into reflections of Jesus Christ. Born and raised in Ghana, Florence is intimately aware of the harsh conditions many live through on a daily basis. Her ministry began with feeding people in her restaurant which quickly became a church. She officially founded Jesus Cares Evangelistic Ministry International in 1996.',
+  usJourney: 'Florence came to the United States in 1999. She graduated from Rhema Bible Training Center in Tulsa, OK in 2001. She also completed the Ministry-In-Training Institute at Oral Roberts University, also in Tulsa.',
+  ourMission: 'United under the visionary leadership of Florence, our group at Jesus Cares Evangelistic Ministry International shares a collective mission to illuminate the path of salvation and discipleship. Hailing from diverse backgrounds, we are bound by a common goal inspired by the compassionate spirit of our founder.',
+  expansion: 'Born and raised in the challenging landscapes of Ghana, Florence\'s journey began with a simple act of kindness in her restaurant, evolving into a vibrant church and, in 1996, the official establishment of Jesus Cares Evangelistic Ministry International. Having expanded our reach to the United States in 1999, we are a community of believers propelled by the teachings of Jesus Christ.',
+  commitment: 'Our collective mission is to reach the lost, extending our hands in both practical assistance and spiritual guidance. As a group, we are dedicated to embodying the love, compassion, and transformative power of the Gospel. Rooted in unity, we aspire to reflect the love and teachings of Christ in our actions.',
 };
 
 export const schoolsContent = {
   mainSchool: {
     name: 'Jesus Cares M. School',
-    description: 'A Christ-centered educational institution providing quality education and spiritual formation for children and youth.',
+    tagline: 'Educating Hearts, Transforming Lives',
+    description: 'A Christ-centered educational institution providing quality education and spiritual formation for children and youth in Ghana.',
     mission: 'To educate and empower the next generation with academic excellence and biblical values, preparing them to be leaders who impact their communities for Christ.',
-    programs: [
-      'Primary Education (Grades 1-6)',
-      'Secondary Education (Grades 7-12)',
-      'Biblical Studies & Character Formation',
-      'Arts & Music Programs',
-      'Sports & Physical Education',
-      'Community Service Projects',
-    ],
+    founded: '2008',
+    location: 'Ghana, West Africa',
     image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids5-1.jpg',
   },
+  programs: [
+    {
+      name: 'Primary Education',
+      description: 'Comprehensive elementary education with strong foundation in literacy, mathematics, and biblical studies.',
+      grades: 'Grades 1-6',
+    },
+    {
+      name: 'Character Formation',
+      description: 'Daily biblical teachings and character development programs that instill Christian values.',
+      focus: 'Spiritual Growth',
+    },
+    {
+      name: 'Community Service',
+      description: 'Students engage in outreach programs, learning to serve their communities with compassion.',
+      impact: 'Local Outreach',
+    },
+  ],
   impact: {
     studentsServed: '500+',
     yearsOperating: '15+',
@@ -119,6 +115,19 @@ export const blogPosts = [
     author: 'Florence R. White',
     image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids1.jpg',
     category: 'Ministry Update',
+    content: `
+      <p>In the heart of Ghana, transformation is happening daily. What began as a simple act of feeding hungry souls in a restaurant has blossomed into a global movement touching thousands of lives.</p>
+      
+      <p>Over the past 30 years, we've witnessed God's faithfulness in remarkable ways. From establishing churches in remote villages to educating hundreds of children through Jesus Cares M. School, every step has been ordered by the Lord.</p>
+      
+      <h3>Recent Testimonies</h3>
+      <p>This month alone, we've seen 50 souls come to Christ through our evangelistic outreach programs. Families are being restored, communities are being transformed, and the light of the Gospel continues to spread across West Africa and beyond.</p>
+      
+      <p>One mother shared how her life changed after attending our Bible study: "I was lost, hopeless, and didn't know where to turn. Through this ministry, I found Jesus and my life has never been the same. Now I'm helping others find that same hope."</p>
+      
+      <h3>Looking Forward</h3>
+      <p>As we continue this journey, we're expanding our reach to new regions, establishing more schools, and training local leaders to carry on this vital work. The harvest is plentiful, and we're committed to being faithful laborers in God's kingdom.</p>
+    `,
   },
   {
     id: 2,
@@ -128,6 +137,19 @@ export const blogPosts = [
     author: 'Ministry Team',
     image: 'https://www.frwglobalministries.org/cdn/shop/files/frwfood.jpg',
     category: 'Outreach',
+    content: `
+      <p>Food insecurity remains a critical challenge in many communities we serve. But through our feeding programs, we're not just providing meals – we're sharing the love of Christ in the most practical way.</p>
+      
+      <h3>Monthly Food Distribution</h3>
+      <p>Every month, our team distributes food packages to over 500 families. These packages include rice, beans, cooking oil, and other essentials that help families stay nourished for weeks.</p>
+      
+      <p>But the impact goes beyond physical nourishment. As we serve, we pray with families, share the Gospel, and build lasting relationships that open doors for discipleship.</p>
+      
+      <h3>Community Impact</h3>
+      <p>"Before this ministry came to our village, we often went to bed hungry," shares one village elder. "Now, not only are our stomachs full, but our hearts are full of hope. We've learned that God cares about every aspect of our lives."</p>
+      
+      <p>Through this simple act of feeding, we've seen entire communities come to know Jesus. Churches have been planted, Bible studies established, and a culture of generosity has taken root.</p>
+    `,
   },
   {
     id: 3,
@@ -137,6 +159,22 @@ export const blogPosts = [
     author: 'Children\'s Ministry',
     image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids3.jpg',
     category: 'Children',
+    content: `
+      <p>Children are not just the church of tomorrow – they are the church of today. At Jesus Cares M. School and through our various children's programs, we're investing in young lives who will shape the future of their communities.</p>
+      
+      <h3>Education with Purpose</h3>
+      <p>Our school provides more than academic education. Every day begins with prayer and Bible study. Students learn that they are fearfully and wonderfully made, created for a purpose by a loving God.</p>
+      
+      <p>The curriculum integrates biblical principles with academic subjects, teaching children to think critically while maintaining a Christian worldview. Math, science, language arts, and social studies all point back to the Creator.</p>
+      
+      <h3>Character Development</h3>
+      <p>Beyond academics, we focus heavily on character formation. Students learn values like integrity, compassion, leadership, and service. Through community service projects, they put these values into action.</p>
+      
+      <p>One graduate recently shared: "Jesus Cares M. School didn't just prepare me for university – it prepared me for life. The biblical foundation I received shapes every decision I make today."</p>
+      
+      <h3>Scholarships and Support</h3>
+      <p>We provide scholarships to students from families who cannot afford tuition. No child is turned away due to financial constraints. Education is a pathway out of poverty, and we're committed to making it accessible to all.</p>
+    `,
   },
   {
     id: 4,
@@ -146,6 +184,22 @@ export const blogPosts = [
     author: 'Florence R. White',
     image: 'https://www.frwglobalministries.org/cdn/shop/files/frwAbout1.jpg',
     category: 'Global Ministry',
+    content: `
+      <p>The Great Commission knows no boundaries. From our roots in Ghana to our expansion across West Africa and beyond, we're committed to taking the Gospel to every nation, tribe, and tongue.</p>
+      
+      <h3>Cross-Cultural Ministry</h3>
+      <p>Operating in multiple countries requires cultural sensitivity and adaptability. We partner with local churches and leaders who understand their communities' unique needs and challenges.</p>
+      
+      <p>In each region, we establish sustainable ministries led by indigenous leaders. This ensures that the work continues long after our team moves on to new frontiers.</p>
+      
+      <h3>Current Reach</h3>
+      <p>Today, our ministry operates in 15 countries across Africa, with growing partnerships in Asia and South America. We've trained over 200 pastors and church leaders who are now planting churches and making disciples in their own communities.</p>
+      
+      <h3>Partnership Opportunities</h3>
+      <p>This global work is only possible through faithful partners who pray, give, and go. Whether you're called to support financially, pray consistently, or join us on a mission trip, there's a place for you in this great work.</p>
+      
+      <p>Together, we're fulfilling the vision of seeing every nation hear the good news of Jesus Christ. The harvest is ready – will you join us?</p>
+    `,
   },
   {
     id: 5,
@@ -155,6 +209,22 @@ export const blogPosts = [
     author: 'Ministry Team',
     image: 'https://www.frwglobalministries.org/cdn/shop/files/frwkids5-1.jpg',
     category: 'Testimony',
+    content: `
+      <p>"How good and pleasant it is when God's people live together in unity!" (Psalm 133:1). This scripture guides everything we do at Florence R. White Global Ministries.</p>
+      
+      <h3>Diverse Yet United</h3>
+      <p>Our team comes from different backgrounds, cultures, and denominations. Yet we're bound together by our love for Jesus and commitment to His mission. This diversity strengthens us, bringing varied perspectives and gifts to the table.</p>
+      
+      <h3>Working Together</h3>
+      <p>Every project, from feeding programs to evangelistic crusades, involves collaboration. Teachers, evangelists, administrators, and volunteers all work together seamlessly because we share a common vision.</p>
+      
+      <p>This unity extends to our partnerships with local churches and other ministries. We believe the body of Christ is stronger when we work together rather than in isolation.</p>
+      
+      <h3>The Power of Agreement</h3>
+      <p>Jesus said, "Again, truly I tell you that if two of you on earth agree about anything they ask for, it will be done for them by my Father in heaven" (Matthew 18:19).</p>
+      
+      <p>We've witnessed the power of this principle. When we pray together in agreement, miracles happen. Sick bodies are healed, financial provision arrives just in time, and doors open that seemed permanently closed.</p>
+    `,
   },
   {
     id: 6,
@@ -164,6 +234,24 @@ export const blogPosts = [
     author: 'Florence R. White',
     image: 'https://www.frwglobalministries.org/cdn/shop/files/crossssbg.jpg',
     category: 'Teaching',
+    content: `
+      <p>"For the grace of God has appeared that offers salvation to all people" (Titus 2:11). This verse forms the foundation of everything we do. Grace – unmerited favor – is at the heart of the Gospel message.</p>
+      
+      <h3>Understanding Grace</h3>
+      <p>Grace means receiving what we don't deserve. While we were still sinners, Christ died for us. Not because we earned it, but because of His infinite love and mercy.</p>
+      
+      <p>This message transforms lives. In communities where people have grown up believing they must earn God's favor through rituals and works, the message of grace brings incredible freedom and joy.</p>
+      
+      <h3>Living in Grace</h3>
+      <p>Grace doesn't just save us – it empowers us to live righteously. Paul wrote, "The grace of God teaches us to say 'No' to ungodliness and worldly passions, and to live self-controlled, upright and godly lives" (Titus 2:12).</p>
+      
+      <p>We teach believers that grace provides both forgiveness for past sins and power to overcome present temptations. It's not a license to sin, but an invitation to holiness.</p>
+      
+      <h3>Grace in Action</h3>
+      <p>Every feeding program, every scholarship, every medical clinic – these are expressions of God's grace flowing through us to others. We freely received, so we freely give.</p>
+      
+      <p>This is the message that will continue to guide our ministry: God's grace is sufficient, His power is made perfect in weakness, and His love never fails.</p>
+    `,
   },
 ];
 
