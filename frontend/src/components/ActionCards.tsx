@@ -1,7 +1,7 @@
 import React from 'react';
 import { actionCards } from '../data/mock';
 
-const ActionCards = () => {
+const ActionCards: React.FC = () => {
   return (
     <div className="w-full py-16 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
