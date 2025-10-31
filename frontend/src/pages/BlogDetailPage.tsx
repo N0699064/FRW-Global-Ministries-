@@ -4,10 +4,11 @@ import { Calendar, User, ArrowLeft } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { blogPosts } from '../data/mock';
+import type { BlogPost } from '../types';
 
-const BlogDetailPage = () => {
-  const { id } = useParams();
-  const post = blogPosts.find(p => p.id === parseInt(id));
+const BlogDetailPage: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
+  const post: BlogPost | undefined = blogPosts.find(p => p.id === parseInt(id || '0'));
 
   useEffect(() => {
     window.scrollTo(0, 0);
