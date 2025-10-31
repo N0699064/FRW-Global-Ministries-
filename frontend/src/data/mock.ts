@@ -41,7 +41,7 @@ export const statsData: StatsData = {
   ],
 };
 
-export const missionContent = {
+export const missionContent: MissionContent = {
   title: 'THE MISSION',
   description: 'United under the visionary leadership of Florence, our group at Jesus Cares Evangelistic Ministry International and Florence R. White Global Ministries shares a collective mission to illuminate the path of salvation and discipleship. Rooted in unity, we aspire to reflect the love and teachings of CHRIST in our actions.',
   highlight: 'Loving God and Loving Others',
