@@ -1,6 +1,16 @@
 // Mock data for FRW Global Ministries website
+import type {
+  NavigationItem,
+  HeroContent,
+  StatsData,
+  MissionContent,
+  AboutContent,
+  SchoolsContent,
+  ActionCard,
+  BlogPost,
+} from '../types';
 
-export const navigationItems = [
+export const navigationItems: NavigationItem[] = [
   { name: 'HOME', path: '/' },
   { name: 'ABOUT US', path: '/about' },
   { 
