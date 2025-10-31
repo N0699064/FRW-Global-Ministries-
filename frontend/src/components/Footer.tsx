@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
 import { paypalDonateLink } from '../data/mock';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
