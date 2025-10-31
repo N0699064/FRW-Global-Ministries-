@@ -1,7 +1,7 @@
 import React from 'react';
 import { statsData } from '../data/mock';
 
-const StatsSection = () => {
+const StatsSection: React.FC = () => {
   return (
     <div className="relative w-full bg-black py-24">
       <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-4 opacity-20">
