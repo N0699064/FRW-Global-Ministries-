@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { heroContent } from '../data/mock';
 import { Play, X } from 'lucide-react';
 
-const HeroSection = () => {
-  const [showFullVideo, setShowFullVideo] = useState(false);
-  const [videoKey, setVideoKey] = useState(0);
+const HeroSection: React.FC = () => {
+  const [showFullVideo, setShowFullVideo] = useState<boolean>(false);
+  const [videoKey, setVideoKey] = useState<number>(0);
   
-  const getVimeoId = (url) => {
+  const getVimeoId = (url: string): string | null => {
     const match = url.match(/vimeo\.com\/(\d+)/);
     return match ? match[1] : null;
   };
