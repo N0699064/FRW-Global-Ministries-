@@ -8,7 +8,7 @@ import ImpactBanner from '../components/ImpactBanner';
 import ActionCards from '../components/ActionCards';
 import Footer from '../components/Footer';
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <div className="w-full">
       <Navbar />
