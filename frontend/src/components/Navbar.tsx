@@ -17,18 +17,18 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleMouseEnter = (itemName) => {
+  const handleMouseEnter = (itemName: string): void => {
     setOpenDropdown(itemName);
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (): void => {
     // Small delay to allow mouse to move into dropdown
     setTimeout(() => {
       setOpenDropdown(null);
     }, 200);
   };
 
-  const toggleDropdown = (itemName) => {
+  const toggleDropdown = (itemName: string): void => {
     setOpenDropdown(openDropdown === itemName ? null : itemName);
   };
 
