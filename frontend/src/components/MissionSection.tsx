@@ -1,7 +1,7 @@
 import React from 'react';
 import { missionContent } from '../data/mock';
 
-const MissionSection = () => {
+const MissionSection: React.FC = () => {
   return (
     <div className="w-full bg-white py-24 px-6">
       <div className="max-w-5xl mx-auto">
