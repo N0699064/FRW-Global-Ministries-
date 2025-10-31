@@ -23,7 +23,7 @@ export const navigationItems: NavigationItem[] = [
   { name: 'BLOG', path: '/blog' },
 ];
 
-export const heroContent = {
+export const heroContent: HeroContent = {
   title: 'LOVING GOD AND LOVING OTHERS',
   subtitle: 'For the grace of God has appeared that offers salvation to all people. - Titus 2:11',
   videoUrl: 'https://vimeo.com/1132107066',
