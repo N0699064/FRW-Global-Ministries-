@@ -47,6 +47,10 @@ const Navbar = () => {
               alt="Florence R. White Global Ministries"
               className="h-16 w-auto"
             />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-black tracking-tight">Florence R. White</span>
+              <span className="text-sm text-gray-600">Global Ministries</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
