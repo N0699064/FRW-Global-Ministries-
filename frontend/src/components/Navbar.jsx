@@ -42,13 +42,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-              <div className="w-8 h-8 border-4 border-white rounded-full border-l-transparent transform rotate-45"></div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-black tracking-tight">Florence R. White</span>
-              <span className="text-sm text-gray-600">Global Ministries</span>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_frw-paypal-store/artifacts/rcr9qh4n_frwlogosss.svg"
+              alt="Florence R. White Global Ministries"
+              className="h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
