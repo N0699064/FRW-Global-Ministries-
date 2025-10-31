@@ -5,10 +5,10 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { blogPosts } from '../data/mock';
 
-const BlogPage = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+const BlogPage: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
-  const categories = ['All', 'Ministry Update', 'Outreach', 'Children', 'Global Ministry', 'Testimony', 'Teaching'];
+  const categories: string[] = ['All', 'Ministry Update', 'Outreach', 'Children', 'Global Ministry', 'Testimony', 'Teaching'];
 
   const filteredPosts = selectedCategory === 'All' 
     ? blogPosts 
