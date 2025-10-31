@@ -121,7 +121,7 @@ export const actionCards: ActionCard[] = [
   },
 ];
 
-export const blogPosts = [
+export const blogPosts: BlogPost[] = [
   {
     id: 1,
     title: 'God is Moving Through This Ministry',
