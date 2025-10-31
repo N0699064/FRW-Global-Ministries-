@@ -7,7 +7,7 @@ import AboutPage from './pages/AboutPage';
 import SchoolsPage from './pages/SchoolsPage';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
