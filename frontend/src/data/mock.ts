@@ -270,4 +270,4 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
-export const paypalDonateLink = 'https://www.paypal.com/donate/?business=7PUG78MDTCB8A&no_recurring=0&item_name=Thank+you+for+your+donation%2C+may+God+bless.&currency_code=USD';
+export const paypalDonateLink: string = 'https://www.paypal.com/donate/?business=7PUG78MDTCB8A&no_recurring=0&item_name=Thank+you+for+your+donation%2C+may+God+bless.&currency_code=USD';
