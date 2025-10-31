@@ -47,7 +47,7 @@ export const missionContent: MissionContent = {
   highlight: 'Loving God and Loving Others',
 };
 
-export const aboutContent = {
+export const aboutContent: AboutContent = {
   title: 'About Florence R. White Global Ministries',
   founderName: 'Florence R. White',
   founderImage: 'https://www.frwglobalministries.org/cdn/shop/files/frw.png',
