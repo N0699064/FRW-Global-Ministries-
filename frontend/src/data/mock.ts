@@ -97,7 +97,7 @@ export const schoolsContent: SchoolsContent = {
   ],
 };
 
-export const actionCards = [
+export const actionCards: ActionCard[] = [
   {
     id: 1,
     title: 'Join the Movement',
