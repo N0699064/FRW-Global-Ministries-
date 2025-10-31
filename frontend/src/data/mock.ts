@@ -30,7 +30,7 @@ export const heroContent: HeroContent = {
   backgroundImage: 'https://www.frwglobalministries.org/cdn/shop/files/crossssbg.jpg',
 };
 
-export const statsData = {
+export const statsData: StatsData = {
   number: '30+',
   description: 'YEARS OF MINISTRY IMPACT SINCE 1993',
   images: [
