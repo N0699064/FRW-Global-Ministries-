@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import { schoolsContent, paypalDonateLink } from '../data/mock';
 import { Quote } from 'lucide-react';
 
-const SchoolsPage = () => {
+const SchoolsPage: React.FC = () => {
   return (
     <div className="w-full">
       <Navbar />
