@@ -58,7 +58,7 @@ export const aboutContent: AboutContent = {
   commitment: 'Our collective mission is to reach the lost, extending our hands in both practical assistance and spiritual guidance. As a group, we are dedicated to embodying the love, compassion, and transformative power of the Gospel. Rooted in unity, we aspire to reflect the love and teachings of Christ in our actions.',
 };
 
-export const schoolsContent = {
+export const schoolsContent: SchoolsContent = {
   mainSchool: {
     name: 'Jesus Cares Montessori School',
     tagline: 'Nurturing Minds, Transforming Lives',
