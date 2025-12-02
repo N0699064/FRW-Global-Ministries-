@@ -91,9 +91,9 @@ export const schoolsContent: SchoolsContent = {
     'https://www.frwglobalministries.org/cdn/shop/files/frwkids9.jpg',
     'https://www.frwglobalministries.org/cdn/shop/files/frwkids10.jpg',
     'https://www.frwglobalministries.org/cdn/shop/files/IMG_2453.jpg',
-    'https://images.unsplash.com/photo-1761208663994-5d8aac0f9276',
-    'https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg',
-    'https://images.pexels.com/photos/5428265/pexels-photo-5428265.jpeg',
+    'https://www.frwglobalministries.org/cdn/shop/files/frwkids7.jpg',
+    'https://www.frwglobalministries.org/cdn/shop/files/jcmsdp.png',
+    'https://www.frwglobalministries.org/cdn/shop/files/IMG_2452.jpg',
   ],
 };
 
