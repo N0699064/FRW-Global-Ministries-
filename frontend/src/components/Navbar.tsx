@@ -22,10 +22,10 @@ const Navbar: React.FC = () => {
   };
 
   const handleMouseLeave = (): void => {
-    // Small delay to allow mouse to move into dropdown
+    // Longer delay to allow mouse to move into dropdown
     setTimeout(() => {
       setOpenDropdown(null);
-    }, 200);
+    }, 500);
   };
 
   const toggleDropdown = (itemName: string): void => {
